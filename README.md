@@ -1,7 +1,7 @@
 # Web Style Guide
 
 Team Treehouse - Front End Web Development TechDegree - Project 4
-  - Submitted 0/0/00 ***IN PROGRESS***
+  - Submitted 5/17/23 ***SUBMITTED***
 
 -SKILLS USED-
 * HTML
