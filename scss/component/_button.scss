@@ -20,22 +20,37 @@
 
 .default {
   background-color: $color-secondary;
+  &:hover {
+    background-color: lighten-color($color-secondary);
+  }
 }
 
 .error {
   background-color: $color-err;
+  &:hover {
+    background-color: lighten-color($color-err);
+  }
 }
 
 .info {
   background-color: $color-info;
+  &:hover {
+    background-color: lighten-color($color-info);
+  }
 }
 
 .success {
   background-color: $color-success;
+  &:hover {
+    background-color: lighten-color($color-success);
+  }
 }
 
 .warning {
   background-color: $color-warn;
+  &:hover {
+    background-color: lighten-color($color-warn);
+  }
 }
   
   

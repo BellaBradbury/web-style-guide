@@ -1,0 +1,4 @@
+// ---------- COLORS ---------- //
+@function lighten-color ($color, $light: 15%) {
+    @return lighten($color, $light);
+}
