@@ -1,75 +1,55 @@
-  /* ============================================= */
-  /*              Grid System                      */
-  /* ============================================= */
-  
-  .container {
-    padding: 0 10px;
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+  padding: 0 10px;
+  @include mq($mq-med) {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .row {
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+  @include mq($mq-med) {
+    flex-direction: row;
+  }
+}
+
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  @include mq($mq-med) {
     display: flex;
-    flex-direction: column;
-    padding: 1em 10px;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
   }
+}
+
+[class^=col] + [class^=col] {
+  @include mq($mq-med) {
+    margin-left: 10px;
+  }
+}
+
+@each $theme, $color in $themes {
+  .theme.col-#{$theme} {
+    background-color: $color;
+  }
+}
+
   
-  [class^=col] {
-    margin-top: 10px;
-    flex-basis: 100%;
-    min-height: 25px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .theme.col-1 {
-    background-color: $color-info;
-  }
-  
-  .theme.col-2 {
-    background-color: $color-warn;
-  }
-  
-  .theme.col-3 {
-    background-color: $color-theme-3;
-  }
-  
-  .theme.col-4 {
-    background-color: $color-theme-4;
-  }
-  
-  .theme.col-5 {
-    background-color: $color-theme-5;
-  }
-  
-  .theme.col-6 {
-    background-color: $color-theme-6;
-  }
-  
-  .theme.col-7 {
-    background-color: $color-theme-7;
-  }
-  
-  .theme.col-8 {
-    background-color: $color-theme-8;
-  }
-  
-  .theme.col-9 {
-    background-color: $color-err;
-  }
-  
-  .theme.col-10 {
-    background-color: $color-success;
-  }
-  
-  .theme.col-11 {
-    background-color: $color-secondary;
-  }
-  
-  .theme.col-12 {
-    background-color: $color-theme-12;
-  }
-  
-  .card {
-    flex-basis: 100%;
-  }
+.card {
+  flex-basis: 100%;
+}
   
   

@@ -1,0 +1,14 @@
+@mixin mq($break) {
+    @media (min-width: $break) {
+        @content;
+    }
+}
+
+@mixin center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centered {
+    @include center();
+}

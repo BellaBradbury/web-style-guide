@@ -1,35 +1,40 @@
-  /* ============================================= */
-  /*              Buttons                          */
-  /* ============================================= */
-  
-  .btn {
-    margin-top: 15px;
-    width: 100%;
-    color: $color-lightest;
-    border: none;
-    padding: 10px 0;
-    text-transform: uppercase;
-    border-radius: 5px;
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $color-lightest;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  @include mq($mq-med) {
+    padding: 10px 30px;
   }
-  
-  .default {
-    background-color: $color-secondary;
+}
+
+.btn + .btn {
+  @include mq($mq-med) {
+    margin-left: 10px;
   }
-  
-  .error {
-    background-color: $color-err;
-  }
-  
-  .info {
-    background-color: $color-info;
-  }
-  
-  .success {
-    background-color: $color-success;
-  }
-  
-  .warning {
-    background-color: $color-warn;
-  }
+}
+
+.default {
+  background-color: $color-secondary;
+}
+
+.error {
+  background-color: $color-err;
+}
+
+.info {
+  background-color: $color-info;
+}
+
+.success {
+  background-color: $color-success;
+}
+
+.warning {
+  background-color: $color-warn;
+}
   
   
