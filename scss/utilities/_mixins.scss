@@ -4,3 +4,10 @@
         @content;
     }
 }
+
+
+// ---------- BUTTON HOVER ---------- //
+@mixin btn-hover($color) {
+    background-color: lighten-color($color);
+    transition: .5s;
+}

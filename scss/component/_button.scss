@@ -21,35 +21,35 @@
 .default {
   background-color: $color-secondary;
   &:hover {
-    background-color: lighten-color($color-secondary);
+    @include btn-hover($color-secondary);
   }
 }
 
 .error {
   background-color: $color-err;
   &:hover {
-    background-color: lighten-color($color-err);
+    @include btn-hover($color-err);
   }
 }
 
 .info {
   background-color: $color-info;
   &:hover {
-    background-color: lighten-color($color-info);
+    @include btn-hover($color-info);
   }
 }
 
 .success {
   background-color: $color-success;
   &:hover {
-    background-color: lighten-color($color-success);
+    @include btn-hover($color-success);
   }
 }
 
 .warning {
   background-color: $color-warn;
   &:hover {
-    background-color: lighten-color($color-warn);
+    @include btn-hover($color-warn);
   }
 }
   
