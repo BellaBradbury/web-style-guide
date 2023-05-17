@@ -637,11 +637,4 @@ a {
   margin-right: auto;
 }
 
-@media (min-width: 768px) {
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
-}
-
 /*# sourceMappingURL=styles.css.map */

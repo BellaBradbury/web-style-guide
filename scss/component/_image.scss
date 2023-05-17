@@ -25,11 +25,3 @@
     margin-right: auto;
   }
 }
-
-.logo {
-  @include mq($mq-med) {
-    margin-left: initial;
-    margin-right: initial;
-  }
-}
-  
