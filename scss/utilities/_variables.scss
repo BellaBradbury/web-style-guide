@@ -10,6 +10,13 @@ $color-warn: #fd7856;
 $color-err: #e4757a;
 $color-success: #63cc82;
 
+
+// ---------- MEASURMENTS ---------- //
+$mq-med: 768px;
+
+
+// ---------- MAP ---------- //
+
 $themes: (
     '1': ('color': #927bc1, 'size': 08.33%),
     '2': ('color': #fd7856, 'size': 16.67%),
@@ -24,7 +31,3 @@ $themes: (
     '11': ('color': #51ddfc, 'size': 91.67%),
     '12': ('color': #80e8d1, 'size': 100%),
 );
-
-
-// ---------- MEASURMENTS ---------- //
-$mq-med: 768px;

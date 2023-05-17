@@ -57,5 +57,13 @@
 .card {
   flex-basis: 100%;
 }
+
+.centered {
+  @include mq($mq-med) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
   
   
