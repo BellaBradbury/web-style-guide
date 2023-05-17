@@ -1,3 +1,4 @@
+// ---------- MEDIA QUERY ---------- //
 @mixin mq($break) {
     @media (min-width: $break) {
         @content;

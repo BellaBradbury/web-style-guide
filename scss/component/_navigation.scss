@@ -1,21 +1,16 @@
-
-  /* ============================================= */
-  /*              Navigation                       */
-  /* ============================================= */
-  
-  .nav {
-    padding-left: 0;
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-    @include mq($mq-med) {
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-    }
+// ---------- NAVIGATION STYLES ---------- //
+.nav {
+  padding-left: 0;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  @include mq($mq-med) {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
   }
-  
-  .nav-link {
+
+  &-link {
     text-align: center;
     border-radius: 5px;
     padding: 10px 0;
@@ -24,13 +19,12 @@
     transition: 
       background-color .2s ease-in-out, 
       color .2s ease-in-out;
+    &:hover {
+      color: $color-lightest;
+      background-color: $color-accent;
+    }
     @include mq($mq-med) {
       flex-basis: 100px;
     }
   }
-  
-  .nav-link:hover {
-    color: $color-lightest;
-    background-color: $color-accent;
-  }
-  
+}

@@ -1,7 +1,4 @@
-/* ============================================= */
-/*              Grid System                      */
-/* ============================================= */
-
+// ---------- GRID STYLES ---------- //
 .container {
   padding: 0 10px;
   @include mq($mq-med) {
@@ -21,6 +18,18 @@
   }
 }
 
+.card {
+  flex-basis: 100%;
+}
+
+.centered {
+  @include mq($mq-med) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -33,14 +42,13 @@
     margin-top: 0;
     align-items: center;
   }
-}
 
-[class^=col] + [class^=col] {
-  @include mq($mq-med) {
-    margin-left: 10px;
+  & + [class^=col] {
+    @include mq($mq-med) {
+      margin-left: 10px;
+    }
   }
 }
-
 
 @each $theme, $col in $themes {
   .theme.col-#{$theme} {
@@ -50,19 +58,6 @@
     @include mq($mq-med) {
       flex-basis: #{map-get($col, size)};
     }
-  }
-}
-
-  
-.card {
-  flex-basis: 100%;
-}
-
-.centered {
-  @include mq($mq-med) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
   
