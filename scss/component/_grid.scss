@@ -41,9 +41,15 @@
   }
 }
 
-@each $theme, $color in $themes {
+
+@each $theme, $col in $themes {
   .theme.col-#{$theme} {
-    background-color: $color;
+    background-color: #{map-get($col, color)};
+  }
+  .col-#{$theme} {
+    @include mq($mq-med) {
+      flex-basis: #{map-get($col, size)};
+    }
   }
 }
 

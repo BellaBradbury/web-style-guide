@@ -11,18 +11,18 @@ $color-err: #e4757a;
 $color-success: #63cc82;
 
 $themes: (
-    '1': #927bc1,
-    '2': #fd7856,
-    '3': #deb2ee,
-    '4': #7ee6fd,
-    '5': #88d9a0,
-    '6': #4da2bb,
-    '7': #ec9fa3,
-    '8': #fd9f85,
-    '9': #e4757a,
-    '10': #63cc82,
-    '11': #51ddfc,
-    '12': #80e8d1,
+    '1': ('color': #927bc1, 'size': 08.33%),
+    '2': ('color': #fd7856, 'size': 16.67%),
+    '3': ('color': #deb2ee, 'size': 25.00%),
+    '4': ('color': #7ee6fd, 'size': 33.33%),
+    '5': ('color': #88d9a0, 'size': 41.67%),
+    '6': ('color': #4da2bb, 'size': 50.00%),
+    '7': ('color': #ec9fa3, 'size': 58.33%),
+    '8': ('color': #fd9f85, 'size': 66.67%),
+    '9': ('color': #e4757a, 'size': 75.00%),
+    '10': ('color': #63cc82, 'size': 83.33%),
+    '11': ('color': #51ddfc, 'size': 91.67%),
+    '12': ('color': #80e8d1, 'size': 100%),
 );
 
 
